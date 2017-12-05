@@ -26,6 +26,8 @@
         <!-- END custom CSS -->
         <!-- Switcher color CSS -->
         <link href="static/css/color-1.css" rel="stylesheet" type="text/css" id="skins" />
+		  <link rel="stylesheet" rel="stylesheet" type="text/css" href="static/css/quizymemorygame.css" />
+
         <!--<![endif]-->
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -372,6 +374,71 @@
 		    	<!-- END Google Maps -->
 	    	</section>
 	        <!-- END Our Wedding Location -->  
+			
+			<!-- Game -->
+        	<section class="section">
+		        <!-- Section Title Donation -->
+				<h2 class="section-title t60">
+					<span>The Perfect Match - Viral Nehali Wedding Game</span>
+				</h2>
+		        <!-- END Section Title Donation -->
+				<div class="container w100 donation-container">
+					<div class="donation-text">Match Viral and Nehali</div>
+					<div class="row mt-20">
+		                <div class="col-lg-12 col-sm-12 col-xs-12">
+		                <div id="tutorial-memorygame" class="quizy-memorygame">
+      <ul>
+          <li class="match1">
+            <img src="static/img/game/1.jpg">
+          </li>
+          <li class="match2">
+            <img src="static/img/game/2.jpg">
+          </li>
+          <li class="match3">
+            <img src="static/img/game/3.jpg">
+          </li>
+          <li class="match4">
+            <img src="static/img/game/4.jpg">
+          </li>
+          <li class="match5">
+            <img src="static/img/game/5.jpg">
+          </li>
+          <li class="match6">
+            <img src="static/img/game/6.jpg">
+          </li>
+          <li class="match1">
+            <br><br><br><p class="text-style1">Viral Rocks</p>
+          </li>
+          <li class="match2">
+            <br><br><br><p class="text-style1">Nehali Rocks</p>
+          </li>
+          <li class="match3">
+            <br><br><br><p class="text-style1">Lovely Nehali</p>
+          </li>
+          <li class="match4">
+            <br><br><br><p class="text-style1">Dashing Viral</p>
+          </li>
+          <li class="match5">
+            <br><br><br><p class="text-style1">Smart Viral</p>
+          </li>
+          <li class="match6">
+            <br><br><br><p class="text-style1">Perfect Jodi</p>
+          </li>
+      </ul>
+    </div>
+    
+    
+    <div class="reset-button">
+      <a id="restart" href="">Reset game</a>
+    </div>
+		                </div>
+		              
+		            </div>
+				</div>
+	    	</section>
+			<!-- END Game -->
+			
+			
 			<!-- Donation -->
         	<section class="section">
 		        <!-- Section Title Donation -->
@@ -416,6 +483,17 @@
 	<!-- Custom JavaScript -->
     <script src="static/js/main.js"></script>
 	<!-- Switcher Color JavaScript -->
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
+	<script src="static/js/jquery.flip.min.js" /></script>
+	<script src="static/js/jquery.quizymemorygame.js" /></script>
+	 <script>
+    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:true, randomised:true }; 
+    $('#tutorial-memorygame').quizyMemoryGame(quizyParams);
+    $('#restart').click(function(){
+      $('#tutorial-memorygame').quizyMemoryGame('restart');
+      return false;
+    });
+  </script>
     </body>
 
 </html>
