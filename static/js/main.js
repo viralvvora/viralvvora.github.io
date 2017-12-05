@@ -183,7 +183,7 @@ $(document).ready(function() {
 	      title: ''
 	    });
 	    var boxText_church = document.createElement("div");
-	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Church</h4><h5>Cerimony</h5><p>12:00 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="static/img/map-church.jpg"></div>';
+	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Jolly Gymkhana</h4><h5>Viral & Nehali\'s Wedding Ceremony</h5><p>12:49 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="static/img/map-church.jpg"></div>';
 	    var marker_church_options = {
 	         content: boxText_church
 	        ,disableAutoPan: false
