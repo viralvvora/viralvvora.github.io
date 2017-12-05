@@ -209,7 +209,7 @@ $(document).ready(function() {
 	    info_box_church.open(map,marker_church);
 	    //end marker church
 	    
-	    //marker restaurant
+	   /* //marker restaurant
 	    var image_restaurant = new google.maps.MarkerImage("static/img/marker-restaurant.png", null, null, null, new google.maps.Size(33,50));
 	    var positionpin_restaurant = new google.maps.LatLng(46.44708343, 30.71826696);
 	    var marker_restaurant = new google.maps.Marker({
@@ -244,44 +244,9 @@ $(document).ready(function() {
 	        info_box_restaurant.open(map,marker_restaurant);
 	    });
 	    info_box_restaurant.open(map,marker_restaurant);
-	    //end marker restaurant
+	    //end marker restaurant*/
 	    
-	    //marker hotel
-	    var image_hotel = new google.maps.MarkerImage("static/img/marker-hotel.png", null, null, null, new google.maps.Size(33,50));
-	    var positionpin_hotel = new google.maps.LatLng(46.44779309, 30.7551527);
-	    var marker_hotel = new google.maps.Marker({
-	      position: positionpin_hotel,
-	      icon: image_hotel,
-	      map: map,
-	      flat: true,
-	      title: ''
-	    });
-	    var boxText_hotel = document.createElement("div");
-	    boxText_hotel.innerHTML = '<div class="grid grid_6 percentage block-focus"><div class="block-focus center"><h4>Hotel</h4><h5>Sleep</h5><p><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i></p></div></div><div class="grid grid_6 percentage block-focus"><img class="block-focus block-focus" src="static/img/map-hotel.jpg"></div>';
-	    var marker_hotel_options = {
-	         content: boxText_hotel
-	        ,disableAutoPan: false
-	        ,maxWidth: 0
-	        ,pixelOffset: new google.maps.Size(-127, -160)
-	        ,zIndex: null
-	        ,boxStyle: { 
-	          opacity: 1,
-	          width: "250px",
-	          background: "#fff",
-	         }
-	        ,closeBoxMargin: "10px"
-	        ,closeBoxURL: "static/img/map-close.png"
-	        ,infoBoxClearance: new google.maps.Size(1, 1)
-	        ,isHidden: false
-	        ,pane: "floatPane"
-	        ,enableEventPropagation: false
-	    };
-		var info_box_hotel = new InfoBox(marker_hotel_options);
-	    google.maps.event.addListener(marker_hotel, 'click', function() {
-	        info_box_hotel.open(map,marker_hotel);
-	    });
-	    info_box_hotel.open(map,marker_hotel);
-	    //end marker hotel
+	   
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
 	//END GOOGLE MAPS  
