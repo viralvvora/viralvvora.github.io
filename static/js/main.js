@@ -183,7 +183,7 @@ $(document).ready(function() {
 	      title: ''
 	    });
 	    var boxText_church = document.createElement("div");
-	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Jolly Gymkhana</h4></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="static/img/map.png"></div>';
+	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><span class="block-focus center"><h4>Jolly Gymkhana</h4></span></div>';
 	    var marker_church_options = {
 	         content: boxText_church
 	        ,disableAutoPan: false
