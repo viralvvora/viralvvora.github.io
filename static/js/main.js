@@ -173,7 +173,7 @@ $(document).ready(function() {
 	    map.mapTypes.set(MY_MAPTYPE_ID, customMapType_church);
 	    
 	    //marker church
-	    var image_church  = new google.maps.MarkerImage("static/img/marker-church.png", null, null, null, new google.maps.Size(33,50));
+	    var image_church  = new google.maps.MarkerImage("static/img/wmap.png", null, null, null, new google.maps.Size(33,50));
 	    var positionpin_church  = new google.maps.LatLng(19.081587,72.89854179999999);
 	    var marker_church  = new google.maps.Marker({
 	      position: positionpin_church ,
@@ -183,7 +183,7 @@ $(document).ready(function() {
 	      title: ''
 	    });
 	    var boxText_church = document.createElement("div");
-	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Jolly Gymkhana</h4><h5>Viral & Nehali\'s Wedding Ceremony</h5><p>12:49 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="static/img/map-church.jpg"></div>';
+	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Jolly Gymkhana</h4></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="static/img/map.png"></div>';
 	    var marker_church_options = {
 	         content: boxText_church
 	        ,disableAutoPan: false
