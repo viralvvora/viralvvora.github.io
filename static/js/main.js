@@ -174,7 +174,7 @@ $(document).ready(function() {
 	    
 	    //marker church
 	    var image_church  = new google.maps.MarkerImage("static/img/wmap.png", null, null, null, new google.maps.Size(33,50));
-	    var positionpin_church  = new google.maps.LatLng(19.081587,72.89854179999999);
+	    var positionpin_church  = new google.maps.LatLng(19.0566153,72.8910873);
 	    var marker_church  = new google.maps.Marker({
 	      position: positionpin_church ,
 	      icon: image_church ,
@@ -183,7 +183,7 @@ $(document).ready(function() {
 	      title: ''
 	    });
 	    var boxText_church = document.createElement("div");
-	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><span class="block-focus center"><h4>Jolly Gymkhana</h4></span></div>';
+	    boxText_church.innerHTML = '<div class="grid grid_6 percentage border-white"><span class="block-focus center"><h4>Club Emerald</h4></span></div>';
 	    var marker_church_options = {
 	         content: boxText_church
 	        ,disableAutoPan: false
