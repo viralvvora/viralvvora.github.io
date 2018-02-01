@@ -265,7 +265,7 @@ $(document).ready(function() {
 		        }
 		    });
 				    
-			var ts = +new Date("February 17, 2018 12:49 GMT");
+			var ts = +new Date("February 17, 2018 12:39 GMT");
 			var date_now = new Date();
 			var seconds = Math.floor((ts - (date_now))/1000);
 			console.log(seconds);
